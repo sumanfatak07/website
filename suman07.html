@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Suman Kangralkar | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--bg2:#fff4f8;--card:#fff;--text:#1d2b4f;--muted:#5d6b8a;--or:#ff7a1a;--bl:#2563eb;--pk:#ffd9e8;--sh:0 8px 24px rgba(37,99,235,.12);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10162b;--bg2:#161d38;--card:#1b2342;--text:#f3f5ff;--muted:#aab4d4;--pk:#3a2a45;--sh:0 8px 24px rgba(0,0,0,.4)}}
+:root[data-theme="dark"]{--bg:#10162b;--bg2:#161d38;--card:#1b2342;--text:#f3f5ff;--muted:#aab4d4;--pk:#3a2a45;--sh:0 8px 24px rgba(0,0,0,.4)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:Poppins,system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;display:flex;justify-content:space-between;align-items:center;padding:12px 6%;background:var(--bg);border-bottom:2px solid var(--pk)}
+nav b{color:var(--or)}nav div{display:flex;gap:16px;flex-wrap:wrap}
+nav a{color:var(--text);text-decoration:none;font-size:14px;font-weight:600;transition:.2s}nav a:hover{color:var(--bl)}
+section{padding:70px 6%;max-width:1000px;margin:auto}
+h2{font-size:28px;margin-bottom:28px;color:var(--bl)}h2::after{content:"";display:block;width:60px;height:4px;border-radius:4px;background:var(--or);margin-top:6px}
+.hero{min-height:88vh;display:flex;flex-direction:column;justify-content:center;position:relative;max-width:none;background:linear-gradient(135deg,var(--bg2),var(--bg));overflow:hidden}
+.hero>*{position:relative;max-width:1000px;width:100%;margin-left:auto;margin-right:auto}
+.blob{position:absolute!important;border-radius:50%;filter:blur(40px);opacity:.6;animation:float 8s ease-in-out infinite;margin:0!important;width:auto!important}
+.b1{width:260px!important;height:260px;background:var(--pk);top:8%;right:6%}
+.b2{width:200px!important;height:200px;background:#ffb27a;bottom:10%;left:4%;animation-delay:2s;opacity:.4}
+.b3{width:160px!important;height:160px;background:#93b4ff;top:50%;right:30%;animation-delay:4s;opacity:.4}
+@keyframes float{50%{transform:translateY(-30px) scale(1.08)}}
+.hi{color:var(--or);font-weight:600}
+h1{font-size:clamp(34px,7vw,60px);line-height:1.15}h1 span{color:var(--bl)}
+.type{font-size:20px;color:var(--muted);min-height:32px;margin:10px 0 24px}
+.type::after{content:"|";color:var(--or);animation:blink 1s infinite}@keyframes blink{50%{opacity:0}}
+.btn{display:inline-block;padding:12px 26px;border-radius:30px;background:var(--or);color:#fff;text-decoration:none;font-weight:600;box-shadow:0 6px 16px rgba(255,122,26,.35);transition:.3s;margin-right:10px}
+.btn:hover{transform:translateY(-4px);background:var(--bl)}.btn.o{background:transparent;color:var(--bl);border:2px solid var(--bl);box-shadow:none}.btn.o:hover{color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:var(--card);border-radius:16px;padding:22px;box-shadow:var(--sh);border-top:4px solid var(--or);transition:.3s}
+.card:nth-child(even){border-top-color:var(--bl)}.card:hover{transform:translateY(-8px) rotate(-1deg)}
+.card h3{font-size:17px;margin-bottom:4px}.card p,.card small,.about p{color:var(--muted)}
+.ico{font-size:30px;display:block;margin-bottom:6px;animation:pop 2.5s infinite}@keyframes pop{50%{transform:scale(1.2) rotate(8deg)}}
+.tl{border-left:3px solid var(--pk);padding-left:22px}.tl .card{margin-bottom:18px;position:relative}
+.tl .card::before{content:"";position:absolute;left:-33px;top:26px;width:16px;height:16px;border-radius:50%;background:var(--or);border:3px solid var(--bg)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}.chips span{background:var(--pk);padding:8px 18px;border-radius:30px;font-weight:600;transition:.3s}.chips span:hover{background:var(--or);color:#fff;transform:scale(1.1)}
+.alt{background:var(--bg2);max-width:none}.alt>*{max-width:1000px;margin-left:auto;margin-right:auto}
+footer{text-align:center;padding:26px;background:var(--bl);color:#fff;font-size:14px}
+.rv{opacity:0;transform:translateY(40px);transition:1s}.rv.on{opacity:1;transform:none}
+@media(max-width:600px){nav div{gap:10px}nav a{font-size:12px}}
+</style>
+</head>
+<body>
+<nav><b>Suman K.</b><div><a href="#about">About</a><a href="#edu">Education</a><a href="#ach">Achievements</a><a href="#hob">Hobbies</a><a href="#contact">Contact</a></div></nav>
+
+<section class="hero">
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+<p class="hi">👋 Hello, I'm</p>
+<h1>Suman <span>Kangralkar</span></h1>
+<p class="type" id="type"></p>
+<div><a class="btn" href="#contact">Contact Me</a><a class="btn o" href="#ach">My Achievements</a></div>
+</section>
+
+<section id="about" class="about rv">
+<h2>About Me</h2>
+<p>I'm a BCA student at SKE BCA College, Chandgad, passionate about learning technology and growing my programming skills. Beyond studies, I enjoy sports, art and creative hobbies, and I love taking part in competitions and events.</p>
+</section>
+
+<div class="alt"><section id="edu" class="rv">
+<h2>Education</h2>
+<div class="tl">
+<div class="card"><h3>BCA (Bachelor of Computer Applications)</h3><p>SKE BCA College, Chandgad</p><small>Currently pursuing</small></div>
+<div class="card"><h3>12th (PUC)</h3><p>Maratha Mandal PUC College, Belgaum</p><small>Completed</small></div>
+<div class="card"><h3>10th</h3><p>Bharat Mata High School, Mumbai</p><small>Completed</small></div>
+</div></section></div>
+
+<section id="ach" class="rv">
+<h2>Achievements &amp; Certifications</h2>
+<div class="grid">
+<div class="card"><span class="ico">🥇</span><h3>1st Place</h3><p>Poster Presentation on World Ozone Day, 2024</p></div>
+<div class="card"><span class="ico">🥈</span><h3>2nd Place</h3><p>Kho-Kho Competition</p></div>
+<div class="card"><span class="ico">📜</span><h3>Certified Course</h3><p>C / C++ Programming</p></div>
+</div></section>
+
+<div class="alt"><section id="hob" class="rv">
+<h2>Hobbies</h2>
+<div class="chips"><span>🎯 Carrom</span><span>💃 Dancing</span><span>🎤 Singing</span><span>🍳 Cooking</span></div>
+</section></div>
+
+<section id="contact" class="rv">
+<h2>Get In Touch</h2>
+<div class="card"><h3>Let's connect!</h3><p>📧 your-email@example.com</p><p>📍 Chandgad, Maharashtra</p></div>
+</section>
+
+<footer>© 2026 Suman Kangralkar · Made with 💙🧡</footer>
+
+<script>
+var words=["BCA Student","Quick Learner","Creative Thinker","Sports & Arts Lover"],w=0,c=0,del=false,el=document.getElementById("type");
+(function t(){var s=words[w];el.textContent=s.slice(0,c);
+if(!del&&c<s.length){c++;setTimeout(t,90)}else if(!del){del=true;setTimeout(t,1200)}
+else if(c>0){c--;setTimeout(t,45)}else{del=false;w=(w+1)%words.length;setTimeout(t,300)}})();
+var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)x.target.classList.add("on")})},{threshold:.15});
+document.querySelectorAll(".rv").forEach(function(n){io.observe(n)});
+</script>
+</body>
+</html>
